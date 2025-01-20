@@ -1,0 +1,87 @@
+2025/01/18-19:53:34.647 123e Reusing MANIFEST /home/user/.config/Standard Notes/Local Storage/leveldb/MANIFEST-000001
+2025/01/18-19:53:34.652 123e Recovering log #166
+2025/01/18-19:53:34.653 123e Reusing old log /home/user/.config/Standard Notes/Local Storage/leveldb/000166.log 
+2025/01/18-20:04:35.191 123e Level-0 table #170: started
+2025/01/18-20:04:35.198 123e Level-0 table #170: 63695 bytes OK
+2025/01/18-20:04:35.199 123e Delete type=0 #166
+2025/01/18-20:19:35.177 123e Level-0 table #172: started
+2025/01/18-20:19:35.217 123e Level-0 table #172: 63695 bytes OK
+2025/01/18-20:19:35.219 123e Delete type=0 #169
+2025/01/18-20:19:35.219 123e Compacting 4@0 + 1@1 files
+2025/01/18-20:19:35.220 123e Generated table #173@0: 2 keys, 4325 bytes
+2025/01/18-20:19:35.220 123e Compacted 4@0 + 1@1 files => 4325 bytes
+2025/01/18-20:19:35.222 123e compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/01/18-20:19:35.222 123e Delete type=2 #163
+2025/01/18-20:19:35.222 123e Delete type=2 #165
+2025/01/18-20:19:35.222 123e Delete type=2 #167
+2025/01/18-20:19:35.222 123e Delete type=2 #170
+2025/01/18-20:19:35.222 123e Delete type=2 #172
+2025/01/18-20:34:35.190 123e Level-0 table #175: started
+2025/01/18-20:34:35.198 123e Level-0 table #175: 63695 bytes OK
+2025/01/18-20:34:35.200 123e Delete type=0 #171
+2025/01/18-20:49:35.167 123e Level-0 table #177: started
+2025/01/18-20:49:35.207 123e Level-0 table #177: 63695 bytes OK
+2025/01/18-20:49:35.209 123e Delete type=0 #174
+2025/01/18-21:04:35.172 123e Level-0 table #179: started
+2025/01/18-21:04:35.179 123e Level-0 table #179: 63696 bytes OK
+2025/01/18-21:04:35.181 123e Delete type=0 #176
+2025/01/18-21:19:35.189 123e Level-0 table #181: started
+2025/01/18-21:19:35.197 123e Level-0 table #181: 63693 bytes OK
+2025/01/18-21:19:35.199 123e Delete type=0 #178
+2025/01/18-21:19:35.199 123e Compacting 4@0 + 1@1 files
+2025/01/18-21:19:35.200 123e Generated table #182@0: 2 keys, 4325 bytes
+2025/01/18-21:19:35.201 123e Compacted 4@0 + 1@1 files => 4325 bytes
+2025/01/18-21:19:35.202 123e compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/01/18-21:19:35.202 123e Delete type=2 #173
+2025/01/18-21:19:35.202 123e Delete type=2 #175
+2025/01/18-21:19:35.202 123e Delete type=2 #177
+2025/01/18-21:19:35.202 123e Delete type=2 #179
+2025/01/18-21:19:35.202 123e Delete type=2 #181
+2025/01/18-21:34:35.188 123e Level-0 table #184: started
+2025/01/18-21:34:35.196 123e Level-0 table #184: 63695 bytes OK
+2025/01/18-21:34:35.197 123e Delete type=0 #180
+2025/01/18-21:49:35.190 123e Level-0 table #186: started
+2025/01/18-21:49:35.197 123e Level-0 table #186: 63695 bytes OK
+2025/01/18-21:49:35.199 123e Delete type=0 #183
+2025/01/18-22:04:35.189 123e Level-0 table #188: started
+2025/01/18-22:04:35.197 123e Level-0 table #188: 63692 bytes OK
+2025/01/18-22:04:35.200 123e Delete type=0 #185
+2025/01/18-22:19:35.188 123e Level-0 table #190: started
+2025/01/18-22:19:35.229 123e Level-0 table #190: 63690 bytes OK
+2025/01/18-22:19:35.232 123e Delete type=0 #187
+2025/01/18-22:19:35.232 123e Compacting 4@0 + 1@1 files
+2025/01/18-22:19:35.234 123e Generated table #191@0: 2 keys, 4325 bytes
+2025/01/18-22:19:35.234 123e Compacted 4@0 + 1@1 files => 4325 bytes
+2025/01/18-22:19:35.236 123e compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/01/18-22:19:35.236 123e Delete type=2 #182
+2025/01/18-22:19:35.236 123e Delete type=2 #184
+2025/01/18-22:19:35.236 123e Delete type=2 #186
+2025/01/18-22:19:35.236 123e Delete type=2 #188
+2025/01/18-22:19:35.236 123e Delete type=2 #190
+2025/01/18-22:34:35.190 123e Level-0 table #193: started
+2025/01/18-22:34:35.230 123e Level-0 table #193: 63688 bytes OK
+2025/01/18-22:34:35.232 123e Delete type=0 #189
+2025/01/18-22:49:35.191 123e Level-0 table #195: started
+2025/01/18-22:49:35.198 123e Level-0 table #195: 63695 bytes OK
+2025/01/18-22:49:35.200 123e Delete type=0 #192
+2025/01/18-23:04:35.190 123e Level-0 table #197: started
+2025/01/18-23:04:35.198 123e Level-0 table #197: 63692 bytes OK
+2025/01/18-23:04:35.200 123e Delete type=0 #194
+2025/01/18-23:19:35.192 123e Level-0 table #199: started
+2025/01/18-23:19:35.199 123e Level-0 table #199: 63684 bytes OK
+2025/01/18-23:19:35.201 123e Delete type=0 #196
+2025/01/18-23:19:35.201 123e Compacting 4@0 + 1@1 files
+2025/01/18-23:19:35.202 123e Generated table #200@0: 2 keys, 4321 bytes
+2025/01/18-23:19:35.202 123e Compacted 4@0 + 1@1 files => 4321 bytes
+2025/01/18-23:19:35.204 123e compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/01/18-23:19:35.204 123e Delete type=2 #191
+2025/01/18-23:19:35.204 123e Delete type=2 #193
+2025/01/18-23:19:35.204 123e Delete type=2 #195
+2025/01/18-23:19:35.204 123e Delete type=2 #197
+2025/01/18-23:19:35.204 123e Delete type=2 #199
+2025/01/18-23:34:35.191 123e Level-0 table #202: started
+2025/01/18-23:34:35.198 123e Level-0 table #202: 63691 bytes OK
+2025/01/18-23:34:35.200 123e Delete type=0 #198
+2025/01/18-23:49:35.191 123e Level-0 table #204: started
+2025/01/18-23:49:35.199 123e Level-0 table #204: 63695 bytes OK
+2025/01/18-23:49:35.201 123e Delete type=0 #201

@@ -1,0 +1,53 @@
+[global_config]
+  ask_before_closing = never
+[keybindings]
+  split_horiz = <Primary>period
+  split_vert = <Primary>comma
+[profiles]
+  [[default]]
+    background_darkness = 0.6
+    background_type = image
+    background_image = /home/user/Pictures/Wallpapers/amethald.jpg
+    font = Terminus 12
+    show_titlebar = False
+    scrollbar_position = hidden
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+  [[master]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:0
+      maximised = True
+      fullscreen = False
+      size = 1264, 1582
+      title = /usr/bin/zsh
+      last_active_term = 03872f0a-7eaa-455c-a1e1-05313f2edaf0
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 180
+      ratio = 0.11414077362079898
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 472ff004-e0b5-4e02-8f22-097db48df6ad
+    [[[terminal3]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = default
+      uuid = 03872f0a-7eaa-455c-a1e1-05313f2edaf0
+[plugins]

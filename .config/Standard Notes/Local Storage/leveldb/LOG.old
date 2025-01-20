@@ -1,0 +1,21 @@
+2025/01/17-17:42:43.849 6723 Reusing MANIFEST /home/user/.config/Standard Notes/Local Storage/leveldb/MANIFEST-000001
+2025/01/17-17:42:43.852 6723 Recovering log #158
+2025/01/17-17:42:43.853 6723 Reusing old log /home/user/.config/Standard Notes/Local Storage/leveldb/000158.log 
+2025/01/17-17:43:44.364 6725 Level-0 table #162: started
+2025/01/17-17:43:44.372 6725 Level-0 table #162: 63686 bytes OK
+2025/01/17-17:43:44.374 6725 Delete type=0 #158
+2025/01/17-17:43:44.375 6725 Compacting 4@0 + 1@1 files
+2025/01/17-17:43:44.376 6725 Generated table #163@0: 2 keys, 4325 bytes
+2025/01/17-17:43:44.376 6725 Compacted 4@0 + 1@1 files => 4325 bytes
+2025/01/17-17:43:44.378 6725 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/01/17-17:43:44.378 6725 Delete type=2 #153
+2025/01/17-17:43:44.378 6725 Delete type=2 #155
+2025/01/17-17:43:44.378 6725 Delete type=2 #157
+2025/01/17-17:43:44.378 6725 Delete type=2 #159
+2025/01/17-17:43:44.378 6725 Delete type=2 #162
+2025/01/17-17:58:44.387 6725 Level-0 table #165: started
+2025/01/17-17:58:44.395 6725 Level-0 table #165: 63683 bytes OK
+2025/01/17-17:58:44.397 6725 Delete type=0 #161
+2025/01/17-18:13:44.387 6725 Level-0 table #167: started
+2025/01/17-18:13:44.427 6725 Level-0 table #167: 63695 bytes OK
+2025/01/17-18:13:44.429 6725 Delete type=0 #164

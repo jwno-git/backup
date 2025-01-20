@@ -1,0 +1,260 @@
+# FORMAT:
+mkfs.vfat -F 32 /dev/nvme0n1p1
+mkfs.btrfs /dev/nvme0n1p2
+
+
+# MOUNT TO CREATE BTRFS:
+mount -o noatime,compress=zstd,space_cache=v2 /dev/nvme0n1p2 /mnt
+btrfs subvolume create /mnt/@
+btrfs subvolume create /mnt/@snapshots
+umount /mnt
+
+
+# MOUNT FOR INSTALL:
+mount -o noatime,compress=zstd,space_cache=v2,subvol=@ /dev/nvme0n1p2 /mnt
+mkdir -p /mnt/{boot,home,.snapshots}
+mount -o noatime,compress=zstd,space_cache=v2,subvol=@snapshots /dev/nvme0n1p2 /mnt/.snapshots
+mount /dev/nvme0n1p1 /mnt/boot
+
+
+# Pacstrap
+amd-ucode
+base
+base-devel
+linux
+linux-firmware
+vim
+sudo
+
+
+# Generate Fstab
+genfstab -U /mnt >> /mnt/etc/fstab
+
+
+# Chroot
+arch-chroot /mnt
+
+
+# Users/Passwords
+passwd
+useradd -mG wheel $user
+passwd $user
+EDITOR=vim visudo
+
+# Locale/Time
+ln -sf /usr/share/zoneinfo/America/Regina /etc/localtime
+hwclock --systohc
+vim /etc/locale.gen
+locale-gen
+vim /etc/locale.conf | LANG=en_CA.UTF-8
+
+
+# Hostinfo
+vim /etc/hostname
+[comp name here]
+
+vim /etc/hosts
+127.0.0.1    localhost
+::1          localhost
+127.0.1.1    [comp name here].localdomain    [comp name here]
+
+
+# Install Packages
+blueman
+efibootmgr
+git
+grub
+fastfetch
+Lf
+networkmanager
+network-manager-applet
+otf-font-awesome
+snapper
+terminus-font
+tlp
+tlp-rdw
+ttf-font-awesome
+wget
+zsh
+
+
+# Mkinitcpio
+vim /etc/mkinitcpio.conf
+MODULES=(zram)
+
+mkinitcpio -p linux
+
+
+# Grub
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+grub-mkconfig -o /boot/grub/grub.cfg
+
+
+# Services
+systemctl enable bluetooth.service
+systemctl enable NetworkManager
+systemctl enable NetworkManager-dispatcher.service
+systemctl mask systemd-rfkill.service systemd-rfkill.socket
+systemctl enable tlp.service
+
+
+# EXIT
+umount -lR /mnt
+sudo shutdown now
+
+
+# Activate Wifi
+sudo nmcli device wifi connect [wifi ssid] password [wifi password]
+
+
+# Get Git
+git clone https://github.com/jwno-git/backup
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
+git clone https://aur.archlinux.org/paru-git.git
+
+
+# Zram
+sudo modprobe zram
+sudo bash -c 'echo "zstd" > /sys/block/zram0/comp_algorithm'
+sudo bash -c 'echo "8G" > /sys/block/zram0/disksize'
+sudo mkswap --label zram0 /dev/zram0
+sudo swapon --priority 100 /dev/zram0
+sudo bash -c 'echo "options zram num_devices=1" > /etc/modules-load.d/zram.conf'
+sudo vim /etc/udev/rules.d/99-zram.rules
+ACTION=="add", KERNEL=="zram0", ATTR{comp_algorithm}="zstd", ATTR{disksize}="8G", RUN="/usr/bin/mkswap -U clear /dev/%k", TAG+="systemd"
+
+sudo vim /etc/fstab
+/dev/zram0 none swap defaults,pri=100 0 0
+
+
+# Set Fonts
+sudo bash -c 'echo -e "#KEYMAP=us/nFONT=ter-120b" > /etc/vconsole.conf'
+
+
+# Zsh
+mv .zshrc to Home Folder & cp to /root/
+cp .zsh Dir to /root/
+chsh Home & Root
+
+
+# Refresh/Overkill
+sudo mkinitcpio -p linux
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo reboot now
+
+
+# Btrfs/Snapper Setup
+sudo umount /.snapshots
+sudo rm -rf /.snapshots
+sudo snapper -c root create-config
+sudo btrfs subvolume delete /.snapshots
+sudo mkdir /.snapshots
+sudo mount -a 
+sudo chmod 750 /.snapshots
+sudo btrfs property set -ts /.snapshots ro false
+sudo vim /etc/snapper/configs/root
+Add user
+min age - 1800
+2 hourly
+2 daily
+0 rest
+
+sudo systemctl enable snapper-timeline.timer
+sudo systemctl enable snapper-cleanup.timer
+systemctl edit snapper-timeline.timer
+
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=12h
+OnCalendar=
+
+systemctl edit snapper-cleanup.timer
+
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=12h
+OnCalendar=
+
+
+# Time & Date
+sudo timedatectl set-ntp true
+sudo timedatectl set-timezone America/Regina
+
+
+# Paru
+cd paru/
+makepkg -si
+
+
+#Install Packages
+acpica
+audacity
+bleachbit
+bitwarden
+brightnessctl
+btop
+cliphist
+dunst
+fuse2
+grim
+grub
+hyprcursor
+hyprland
+hyprlang
+hyprpaper
+hyprpicker
+imv
+mpv
+nwg-look
+obs-studio
+pavucontrol
+pipewire
+pipewire-alsa
+pipewire-pulse
+pitivi
+polkit-gnome
+polkit-kde-agent
+proton-vpn-gtk-app
+qt6ct
+qt6-wayland
+rofi-wayland
+seahorse
+slurp
+swappy
+terminator
+unzip
+waybar
+wev
+wireplumber
+wlroots
+xdg-desktop-portal-wlr
+
+
+#Joplin
+wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
+
+
+# Paru
+librewolf-bin
+google-chrome
+standardnotes-bin
+snap-pac-grub
+
+
+# Scripts
+acpica.sh # Fixes sound for zenbook
+
+
+# Cleanup/Archives
+cp .boot/grub and grub-btrfs to /etc/default/
+cp .boot/10_linux to /etc/grub.d/
+tar -zxf /.local/share/icons/F
+cp .local to home drive
+tar -zxf .archives/Material mv to /usr/share/themes/
+tar -zxf .archives/Xenlism mv to /boot/grub/themes/
+mv Pictures/Wallpapers to Home drive
+mv Documents to Home Drive
+cp .config to Home Drive
+
+Sudo reboot now

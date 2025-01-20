@@ -1,0 +1,33 @@
+:root {
+    --border-color-active: rgba(122, 162, 247, 1.0);
+    background-color: #000000;
+}
+
+.workspace {
+    /* remove workspace name */
+    font-size: 0;
+    font-weight: lighter;
+    background-color: #000000;
+    border: unset;
+}
+
+.monitor {
+    background-color: #000000;
+    border: 1px;
+    border-color: rgba(125,  64, 143, 1.0);
+}
+
+.index {
+    font-size: 0;
+    font-weight: lighter;
+    background-color: transparent;
+    border: none;
+}
+
+.client {
+    border-radius: 8px;
+    background-color: transparent;
+    margin-left: 8px;
+    margin-right: 6px;
+    margin-bottom: 7px;
+}

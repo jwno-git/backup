@@ -1,0 +1,305 @@
+{
+	"stateVersion": 68,
+	"global_desktopSettings_openAtLogin": false,
+	"global_config_byServer": {
+		"https://api.bitwarden.com": {
+			"featureStates": {
+				"browser-fileless-import": false,
+				"return-error-on-existing-keypair": true,
+				"use-tree-walker-api-for-page-details-collection": true,
+				"duo-redirect": true,
+				"AC-1795_updated-subscription-status-section": true,
+				"email-verification": true,
+				"email-verification-disable-timing-delays": true,
+				"extension-refresh": true,
+				"restrict-provider-access": true,
+				"PM-4154-bulk-encryption-service": true,
+				"vault-bulk-management-action": true,
+				"ac-2059-member-access-report": true,
+				"block-legacy-users": true,
+				"inline-menu-field-qualification": true,
+				"two-factor-component-refactor": false,
+				"inline-menu-positioning-improvements": true,
+				"ac-2833-provider-client-vault-privacy-banner": false,
+				"pm-8285-device-trust-logging": true,
+				"ssh-key-vault-item": false,
+				"ssh-agent": false,
+				"ssh-version-check-qa-override": false,
+				"authenticator-2fa-token": true,
+				"idp-auto-submit-login": true,
+				"unauth-ui-refresh": false,
+				"generate-identity-fill-script-refactor": true,
+				"delay-fido2-page-script-init-within-mv2": true,
+				"native-carousel-flow": false,
+				"native-create-account-flow": false,
+				"pm-10308-account-deprovisioning": false,
+				"notification-bar-add-login-improvements": true,
+				"AC-2476-deprecate-stripe-sources-api": true,
+				"persist-popup-view": true,
+				"cipher-key-encryption": false,
+				"enable-new-card-combined-expiry-autofill": true,
+				"storage-reseed-refactor": true,
+				"PM-8163-trial-payment": false,
+				"remove-server-version-header": false,
+				"pm-3479-secure-org-group-details": true,
+				"pm-12337-refactor-sso-details-endpoint": true,
+				"pm-12275-multi-organization-enterprises": true,
+				"generator-tools-modernization": false,
+				"new-device-verification": false,
+				"pm-14466-risk-insights-critical-application": false,
+				"pm-14505-admin-console-integration-page": true,
+				"new-device-temporary-dismiss": false,
+				"new-device-permanent-dismiss": false,
+				"security-tasks": false,
+				"PM-14401-scale-msp-on-client-organization-update": true,
+				"pm-11360-remove-provider-export-permission": true,
+				"PM-12274-disable-free-families-sponsorship": true,
+				"macos-native-credential-sync": false,
+				"pm-9111-extension-persist-add-edit-form": false,
+				"inline-menu-totp": false,
+				"pm-12443-remove-paging-logic": true,
+				"pm-11516-self-host-license-refactor": true,
+				"pm-15128-promote-provider-service-user-tool": true,
+				"pm-12241-private-key-regeneration": false,
+				"enable-authenticator-sync-ios": false,
+				"enable-authenticator-sync-android": false,
+				"app-review-prompt": false
+			},
+			"version": "2025.1.2",
+			"gitHash": "4fa2995f",
+			"server": null,
+			"utcDate": "2025-01-16T01:56:09.880Z",
+			"environment": {
+				"cloudRegion": "US",
+				"vault": "https://vault.bitwarden.com",
+				"api": "https://api.bitwarden.com",
+				"identity": "https://identity.bitwarden.com",
+				"notifications": "https://notifications.bitwarden.com",
+				"sso": "https://sso.bitwarden.com"
+			},
+			"settings": {
+				"disableUserRegistration": false
+			}
+		}
+	},
+	"global_desktopSettings_window": {
+		"width": 1024,
+		"height": 640,
+		"isMaximized": false,
+		"displayBounds": {
+			"x": 0,
+			"y": 0,
+			"width": 2560,
+			"height": 1600
+		},
+		"x": 768,
+		"y": 480,
+		"zoomFactor": 1
+	},
+	"global_applicationId_appId": "8a842f12-308f-4a9b-9c5c-126b6be01d6b",
+	"global_account_accounts": {
+		"bec16ba2-6d03-4a3c-afea-b1c1008b4d6b": {
+			"email": "",
+			"emailVerified": false
+		}
+	},
+	"global_account_activity": {},
+	"global_account_activeAccountId": null,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_environment_environment": {},
+	"bec16ba2-6d03-4a3c-afea-b1c1008b4d6b": {
+		"keys": {
+			"cryptoSymmetricKey": {}
+		},
+		"profile": {}
+	},
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_userDecryptionOptions_decryptionOptions": {
+		"hasMasterPassword": true
+	},
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_vaultTimeoutSettings_vaultTimeoutAction": "logOut",
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_vaultTimeoutSettings_vaultTimeout": 15,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_token_accessToken": null,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_token_refreshToken": null,
+	"global_clearEvent_logout": [
+		{
+			"state": "kdfConfig",
+			"key": "kdfConfig",
+			"location": "disk"
+		},
+		{
+			"state": "billing",
+			"key": "accountProfile",
+			"location": "disk"
+		},
+		{
+			"state": "masterPassword",
+			"key": "masterKey",
+			"location": "memory"
+		},
+		{
+			"state": "masterPassword",
+			"key": "masterKeyHash",
+			"location": "disk"
+		},
+		{
+			"state": "masterPassword",
+			"key": "masterKeyEncryptedUserKey",
+			"location": "disk"
+		},
+		{
+			"state": "crypto",
+			"key": "userKey",
+			"location": "memory"
+		},
+		{
+			"state": "crypto",
+			"key": "everHadUserKey",
+			"location": "disk"
+		},
+		{
+			"state": "crypto",
+			"key": "privateKey",
+			"location": "disk"
+		},
+		{
+			"state": "environment",
+			"key": "cloudRegion",
+			"location": "memory"
+		},
+		{
+			"state": "config",
+			"key": "serverConfig",
+			"location": "disk"
+		},
+		{
+			"state": "vaultSearch",
+			"key": "isIndexing",
+			"location": "memory"
+		},
+		{
+			"state": "vaultSearch",
+			"key": "searchIndex",
+			"location": "memory"
+		},
+		{
+			"state": "crypto",
+			"key": "providerKeys",
+			"location": "disk"
+		},
+		{
+			"state": "crypto",
+			"key": "organizationKeys",
+			"location": "disk"
+		},
+		{
+			"state": "token",
+			"key": "securityStamp",
+			"location": "memory"
+		},
+		{
+			"state": "keyConnector",
+			"key": "usesKeyConnector",
+			"location": "disk"
+		},
+		{
+			"state": "providers",
+			"key": "providers",
+			"location": "disk"
+		},
+		{
+			"state": "organizations",
+			"key": "organizations",
+			"location": "disk"
+		},
+		{
+			"state": "folder",
+			"key": "folders",
+			"location": "disk"
+		},
+		{
+			"state": "collection",
+			"key": "collections",
+			"location": "disk"
+		},
+		{
+			"state": "ciphersMemory",
+			"key": "decryptedCiphers",
+			"location": "memory"
+		},
+		{
+			"state": "ciphers",
+			"key": "ciphers",
+			"location": "disk"
+		},
+		{
+			"state": "encryptedSend",
+			"key": "sendUserEncrypted",
+			"location": "disk"
+		},
+		{
+			"state": "domainSettings",
+			"key": "equivalentDomains",
+			"location": "disk"
+		},
+		{
+			"state": "policies",
+			"key": "policies",
+			"location": "disk"
+		},
+		{
+			"state": "sync",
+			"key": "lastSync",
+			"location": "disk"
+		},
+		{
+			"state": "eventCollection",
+			"key": "events",
+			"location": "disk"
+		}
+	],
+	"global_clearEvent_lock": [
+		{
+			"state": "masterPassword",
+			"key": "masterKey",
+			"location": "memory"
+		},
+		{
+			"state": "crypto",
+			"key": "userKey",
+			"location": "memory"
+		},
+		{
+			"state": "vaultSearch",
+			"key": "isIndexing",
+			"location": "memory"
+		},
+		{
+			"state": "vaultSearch",
+			"key": "searchIndex",
+			"location": "memory"
+		},
+		{
+			"state": "ciphersMemory",
+			"key": "decryptedCiphers",
+			"location": "memory"
+		}
+	],
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_masterPassword_masterKeyHash": null,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_crypto_everHadUserKey": null,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_pinUnlock_pinKeyEncryptedUserKeyPersistent": null,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_crypto_privateKey": null,
+	"global_loginEmail_storedEmail": "j.william.novak@pm.me",
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_crypto_providerKeys": null,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_crypto_organizationKeys": null,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_avatar_avatarColor": null,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_keyConnector_convertAccountToKeyConnector": null,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_collection_collections": null,
+	"global_biometricSettings_promptCancelled": null,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_biometricSettings_clientKeyHalf": null,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_pinUnlock_userKeyEncryptedPin": null,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_pinUnlock_oldPinKeyEncryptedMasterKey": null,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_token_apiKeyClientId": null,
+	"user_bec16ba2-6d03-4a3c-afea-b1c1008b4d6b_token_apiKeyClientSecret": null,
+	"global_desktopSettings_trayEnabled": false,
+	"global_desktopSettings_startToTray": false,
+	"global_theming_selection": "dark"
+}

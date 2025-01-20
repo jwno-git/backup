@@ -1,0 +1,9 @@
+VI					     VI		 	   	      PACMAN			GIT			XDG					SNAPPER					TERM						
+Esc - Ctrl + D       # Jump Half Down	     Esc - gg  # Go to Top	      -S    # install		status			xdg-settings set			list					Ctrl + Tab           # Active			
+Esc - Ctrl + U       # Jump Half Up	     Esc - G   # Go to Bottom	      -Syyu # Upgrade		add -u			xdg-open				-c root create --description "desc"	Ctrl + ,             # Split Vert		
+zt or zz or zb	     # Top/Middle/Bottom     Esc - $   # Jump EoL	      -Rns  # Uninstall		diff			xdg-mime default       # set default	-c root delete "#" "# #" "#-#"  	Ctrl + .             # Split Hor	
+V - Left/Right       # Highlight	     Esc - ^   # Jump BoL	      -Ss   # Search		commit -m		xdg-mime query default # Find current	/etc/snapper/configs/root		Ctrl + Shift + W     # Close Current	
+Highlight - D        # Cut/Delete	     Esc - :n  # Jump to Line	      -Qtdq # Orphans		push -u origin main											Ctrl + Shift + Up    # Move Divider Up	
+Highlight - Y        # Copy		     Esc - w   # Jump Word Forward    -Qe   # Installed															Ctrl + Shift + Down  # Move Divider Down		
+Cut/Delete/Copy - P  # Paste/Put  	     Esc - b   # Jump Word Backward
+				

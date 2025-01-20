@@ -1,0 +1,151 @@
+
+* {
+    font: "Hack Mono 16";
+    red:                         rgba ( 220, 50, 47, 100 % );
+    lightfg:                     rgba ( 88, 104, 117, 100 % );
+    lightbg:                     rgba ( 238, 232, 213, 100 % );
+    background-color:            transparent;
+    spacing:                     2;
+    blue:                        rgba ( 38, 139, 210, 100 % );
+    background:                  rgba ( 253, 246, 227, 100 % );
+    foreground:                  rgba ( 0, 43, 54, 100 % );
+    lightblue:                   rgba ( 153, 204, 255, 1.0 );
+    lightmagenta:                rgba ( 125,  64, 143, 100 % );
+}
+element {
+    cursor:           pointer;
+    text-color:       rgba ( 153, 204, 255, 1.0 );
+    padding:          4px ;
+    margin:           0;
+    background-color: transparent;
+    border:           0;
+    horizontal-align: 0.50;
+    spacing:          0px ;
+}
+element normal.normal {
+    background-color: rgba ( 13, 17, 23, 100 % );
+    text-color:       rgba ( 153, 204, 255, 1.0 );
+}
+element normal.urgent {
+    background-color: rgba ( 253, 246, 227, 100 % );
+    text-color:       rgba ( 153, 204, 255, 1.0 );
+}
+element normal.active {
+    background-color: rgba ( 253, 246, 227, 100 % );
+    text-color:       rgba ( 153, 204, 255, 1.0 );
+}
+element selected.normal {
+    border:           3px ;
+    background-color: #130217;
+    border-color:     rgba ( 125,  64, 143, 100 % );
+    text-color:       rgba ( 153, 204, 255, 1.0 );
+    border-radius:    10px ;
+}
+element selected.urgent {
+    background-color: rgba ( 220, 50, 47, 100 % );
+    text-color:       rgba ( 153, 204, 255, 1.0 );
+}
+element selected.active {
+    background-color: rgba ( 38, 139, 210, 100 % );
+    text-color:       rgba ( 153, 204, 255, 1.0 );
+}
+element-text {
+    horizontal-align: 0.50;
+    background-color: transparent;
+    cursor:           inherit;
+    highlight:        inherit;
+    vertical-align:   0.50;
+    text-color:       rgba ( 153, 204, 255, 1.0 );
+}
+element-icon {
+    background-color: transparent;
+    size:             1.0000em ;
+    cursor:           inherit;
+    text-color:       rgba ( 153, 204, 255, 1.0 );
+}
+window {
+    padding:          40px ;
+    background-color: rgba ( 0, 0, 0, 80 % );
+    width:            700px ;
+    transparency:     "real";
+    border-color:     rgba ( 125,  64, 143, 100 % );
+    border:           1;
+    border-radius:    25px ;
+}
+mainbox {
+    padding:          0;
+    horizontal-align: 0.50;
+    border:           0;
+    children:         [ "inputbar","listview" ];
+}
+message {
+    padding:      1px ;
+    border-color: rgba ( 0, 43, 54, 100 % );
+}
+textbox {
+    text-color: rgba ( 153, 204, 255, 1.0 );
+}
+listview {
+    fixed-height: true;
+    fixed-width: false;
+    padding:      2px 0px 0px ;
+    scrollbar:    false;
+    cycle:        false;
+    lines:        1;
+    border-color: rgba ( 0, 43, 54, 100 % );
+    columns:      1;
+    spacing:      0px ;
+    require-input: false;
+}
+button {
+    cursor:     pointer;
+    spacing:    0;
+    text-color: rgba ( 153, 204, 255, 1.0 );
+}
+button selected {
+    background-color: rgba ( 88, 104, 117, 100 % );
+    text-color:       rgba ( 153, 204, 255, 1.0 );
+}
+num-filtered-rows {
+    expand:     false;
+    text-color: Gray;
+}
+num-rows {
+    expand:     false;
+    text-color: Gray;
+}
+textbox-num-sep {
+    expand:     false;
+    str:        "/";
+    text-color: Gray;
+}
+inputbar {
+    padding:          1px ;
+    horizontal-align: 0.50;
+    spacing:          8px ;
+    text-color:       rgba ( 153, 204, 255, 1.0 );
+    children:         [ "prompt","entry" ];
+}
+case-indicator {
+    spacing:    0;
+    text-color: rgba ( 153, 204, 255, 1.0 );
+}
+entry {
+    horizontal-align:  0.50;
+    text-color:        rgba ( 153, 204, 255, 1.0 );
+    cursor:            text;
+    cursor-color:      rgba ( 125,  64, 143, 100 % );
+    spacing:           0;
+    placeholder-color: rgba ( 136, 136, 136, 100 % );
+    placeholder:       "";
+}
+prompt {
+    spacing:    0;
+    text-color: rgba ( 125,  64, 143, 100 % );
+}
+textbox-prompt-colon {
+    margin:     0px 0.3000em 0.0000em 0.0000em ;
+    expand:     false;
+    str:        ":";
+    text-color: rgba ( 125,  64, 143, 100 % );
+}
