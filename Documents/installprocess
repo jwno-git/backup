@@ -200,10 +200,8 @@ hyprcursor
 hyprland
 hyprlang
 hyprpaper
-hyprpicker
 hyprpolkitagent
 imv
-nwg-look
 pipewire
 pipewire-alsa
 pipewire-pulse
@@ -226,7 +224,11 @@ audacity
 bitwarden
 Bleachbit
 Brave
+Color Picker
+Discord
+Eye of Gnome
 Firefox
+Gimp
 Joplin
 mpv
 obs-studio
@@ -234,6 +236,7 @@ passwords and keys (Seahorse)
 protonvpn
 pwvucontrol
 pitivi
+Spotify
 StandardNotes
 flatpak install flathub com.github.tchx84.Flatseal
 
