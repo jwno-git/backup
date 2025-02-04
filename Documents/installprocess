@@ -191,7 +191,6 @@ makepkg -si
 #Install Packages
 acpica
 brightnessctl
-btop
 cliphist
 dunst
 grim
@@ -201,7 +200,6 @@ hyprland
 hyprlang
 hyprpaper
 hyprpolkitagent
-imv
 pipewire
 pipewire-alsa
 pipewire-pulse
@@ -238,9 +236,20 @@ pwvucontrol
 pitivi
 Spotify
 StandardNotes
-flatpak install flathub com.github.tchx84.Flatseal
+com.github.tchx84.Flatseal
 
-sudo ln -s /var/lib/flatpak/exports/bin/chat.rocket.RocketChat /usr/bin/rocket-chat
+
+# Make Desktop Files
+Add Desktop executes /var/lib/flatpak/exports/bin/chat.rocket.RocketChat
+
+[Desktop Entry]
+Name=pwvucontrol
+Exec=/var/lib/flatpak/exports/bin/#com.saivert.pwvucontrol.desktop
+Terminal=false
+Type=Application
+Keywords=GTK
+StartupNotify=true
+X-Flatpak=#com.saivert.pwvucontrol
 
 
 # Paru
