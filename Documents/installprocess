@@ -65,6 +65,7 @@ efibootmgr
 git
 grub
 fastfetch
+flatpak
 Lf
 networkmanager
 network-manager-applet
@@ -189,14 +190,10 @@ makepkg -si
 
 #Install Packages
 acpica
-audacity
-bleachbit
-bitwarden
 brightnessctl
 btop
 cliphist
 dunst
-fuse2
 grim
 grub
 hyprcursor
@@ -204,22 +201,15 @@ hyprland
 hyprlang
 hyprpaper
 hyprpicker
+hyprpolkitagent
 imv
-mpv
 nwg-look
-obs-studio
-pavucontrol
 pipewire
 pipewire-alsa
 pipewire-pulse
-pitivi
-polkit-gnome
-polkit-kde-agent
-proton-vpn-gtk-app
 qt6ct
 qt6-wayland
 rofi-wayland
-seahorse
 slurp
 swappy
 terminator
@@ -231,14 +221,23 @@ wlroots
 xdg-desktop-portal-wlr
 
 
-#Joplin
-wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
+# Flatpak
+audacity
+bitwarden
+Bleachbit
+Brave
+Firefox
+Joplin
+mpv
+obs-studio
+passwords and keys (Seahorse)
+protonvpn
+pwvucontrol
+pitivi
+StandardNotes
 
 
 # Paru
-librewolf-bin
-google-chrome
-standardnotes-bin
 snap-pac-grub
 
 
