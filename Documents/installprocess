@@ -217,28 +217,6 @@ wlroots
 xdg-desktop-portal-wlr
 
 
-# Flatpak
-audacity
-bitwarden
-Bleachbit
-Brave
-Color Picker
-Discord
-Eye of Gnome
-Firefox
-Gimp
-Joplin
-mpv
-obs-studio
-passwords and keys (Seahorse)
-protonvpn
-pwvucontrol
-pitivi
-Spotify
-StandardNotes
-com.github.tchx84.Flatseal
-
-
 # Make Desktop Files
 Add Desktop executes /var/lib/flatpak/exports/bin/chat.rocket.RocketChat
 
@@ -258,17 +236,3 @@ snap-pac-grub
 
 # Scripts
 acpica.sh # Fixes sound for zenbook
-
-
-# Cleanup/Archives
-cp .boot/grub and grub-btrfs to /etc/default/
-cp .boot/10_linux to /etc/grub.d/
-tar -zxf /.local/share/icons/F
-cp .local to home drive
-tar -zxf .archives/Material mv to /usr/share/themes/
-tar -zxf .archives/Xenlism mv to /boot/grub/themes/
-mv Pictures/Wallpapers to Home drive
-mv Documents to Home Drive
-cp .config to Home Drive
-
-Sudo reboot now
